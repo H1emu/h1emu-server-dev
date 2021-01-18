@@ -1,0 +1,3 @@
+[submodule "h1z1-server"]
+	path = h1z1-server
+	url = https://github.com/QuentinGruber/h1z1-server

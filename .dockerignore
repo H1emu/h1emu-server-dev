@@ -1,0 +1,8 @@
+/node_modules
+/Docker
+/h1z1-server/node_modules
+.gitignore
+.gitattributes
+.dockerignore
+LICENSE
+README.md

@@ -1,0 +1,24 @@
+{
+  "name": "h1z1-server-dev",
+  "version": "1.0.0",
+  "description": "",
+  "author": "H1emu",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm-run-all --parallel login-server zone-server",
+    "login-server": "set DEBUG=* & node loginserver.js",
+    "login-client": "set DEBUG=* & node loginclient.js",
+    "gateway-server": "set DEBUG=* & node GatewayServer.js",
+    "gateway-client": "set DEBUG=* & node GatewayClient.js",
+    "zone-server": "set DEBUG=ZoneServer,zonepacketHandlers,H1Z1Protocol & node ZoneServer.js",
+    "zone-client": "set DEBUG=* & node ZoneClient.js",
+    "docker-build-solo-server": "docker build -t h1emu/solo-server -f ./Docker/Solo.Dockerfile .",
+    "docker-build-solo-LoginServer": "docker build -t h1emu/solo-login-server -f ./Docker/Solo.LoginServer.Dockerfile .",
+    "docker-build-solo-ZoneServer": "docker build -t h1emu/solo-zone-server -f ./Docker/Solo.ZoneServer.Dockerfile ."
+  },
+  "dependencies": {
+    "h1z1-server": "file:h1z1-server",
+    "js-base64": "3.4.5",
+    "npm-run-all": "^4.1.5"
+  }
+}
