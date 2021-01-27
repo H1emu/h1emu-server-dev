@@ -2,7 +2,7 @@
 
 ## Usage
 
-run `npm ci` to install dependencies.
+run `npm run setup` to install dependencies & update the submodule.
 
 run `npm start` to launch a loginserver + a zoneserver ( who are required to play )
 
