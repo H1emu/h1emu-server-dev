@@ -3,6 +3,7 @@
 /h1z1-server/node_modules
 .gitignore
 .gitattributes
+.git
 .dockerignore
 LICENSE
 README.md
