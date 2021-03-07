@@ -15,7 +15,7 @@
     "zone-client": "set DEBUG=* & node ZoneClient.js",
     "docker-build-solo-server": "docker build -t h1emu/solo-server -f ./Docker/Solo.Dockerfile .",
     "docker-build-solo-LoginServer": "docker build -t h1emu/solo-login-server -f ./Docker/Solo.LoginServer.Dockerfile .",
-    "docker-build-solo-ZoneServer": "docker build -t h1emu/solo-zone-server -f ./Docker/Solo.ZoneServer.Dockerfile ."
+    "docker-build-solo-ZoneServer": "docker build -t h1emu/solo-zone-server -f ./Docker/Solo.ZoneServer.Dockerfile .",
     "docker-build-solo-all": "npm run docker-build-solo-server && npm run docker-build-solo-LoginServer && npm run docker-build-solo-ZoneServer ",
   },
   "dependencies": {
