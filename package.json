@@ -5,7 +5,9 @@
   "author": "H1emu",
   "license": "MIT",
   "scripts": {
-    "setup": "git submodule update --remote && npm ci",
+    "setup": "npm run update-submodule && npm run install-dependencies",
+    "update-submodule": "git submodule update --remote",
+    "install-dependencies": "npm i ./h1z1-server",
     "start": "npm-run-all --parallel login-server zone-server",
     "login-server": "set DEBUG=* & node loginserver.js",
     "login-client": "set DEBUG=* & node loginclient.js",
