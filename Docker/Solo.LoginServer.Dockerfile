@@ -1,8 +1,7 @@
 FROM node:14-alpine
 WORKDIR /usr/src/app
 COPY . .
-# npm ci mess up with submodules dependencies when yarn don't... will fix that one day
-RUN yarn
+RUN npm ci
 # Login server port
 EXPOSE 1115/udp
 # MongoDB
