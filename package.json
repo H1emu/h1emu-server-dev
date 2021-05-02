@@ -15,10 +15,10 @@
     "gateway-client": "set DEBUG=* & node GatewayClient.js",
     "zone-server": "set DEBUG=ZoneServer,zonepacketHandlers,H1Z1Protocol & node ZoneServer.js",
     "zone-client": "set DEBUG=* & node ZoneClient.js",
-    "docker-build-solo-server": "docker build -t h1emu/solo-server -f ./Docker/Solo.Dockerfile .",
-    "docker-build-solo-LoginServer": "docker build -t h1emu/solo-login-server -f ./Docker/Solo.LoginServer.Dockerfile .",
-    "docker-build-solo-ZoneServer": "docker build -t h1emu/solo-zone-server -f ./Docker/Solo.ZoneServer.Dockerfile .",
-    "docker-build-solo-all": "npm run docker-build-solo-server && npm run docker-build-solo-LoginServer && npm run docker-build-solo-ZoneServer "
+    "docker-build-server": "docker build -t h1emu/server -f ./Docker/Dockerfile .",
+    "docker-build-LoginServer": "docker build -t h1emu/login-server -f ./Docker/LoginServer.Dockerfile .",
+    "docker-build-ZoneServer": "docker build -t h1emu/zone-server -f ./Docker/ZoneServer.Dockerfile .",
+    "docker-build-all": "npm run docker-build-server && npm run docker-build-LoginServer && npm run docker-build-ZoneServer "
   },
   "dependencies": {
     "h1z1-server": "file:h1z1-server",
