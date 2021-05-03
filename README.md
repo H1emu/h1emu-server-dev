@@ -6,7 +6,7 @@ run `npm run setup` to install dependencies & update the submodule.
 
 run `npm start` to launch a loginserver + a zoneserver ( who are required to play )
 
-run `npm run *NAMEOFSERVER/CLIENT*` the server/client of your choice.
+run `npm run *NAMEOFSERVER/CLIENT*` to launch the server/client of your choice.
 
 Servers/Clients:
 
